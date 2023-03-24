@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperSimple Lock App</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>SuperSimple Lock App</h1>
+    </header>
+    <main>
+        <section class="lock-list">
+            <h2>Your Locks</h2>
+            <ul>
+                <li class="lock-item">
+                    <div class="lock-info">
+                        <h3>Front Door</h3>
+                        <p>Status: <span class="lock-status">Locked</span></p>
+                        <p>Last update: <span class="lock-update">2 mins ago</span></p>
+                    </div>
+                    <div class="lock-actions">
+                        <button class="lock-toggle">Toggle Lock</button>
+                    </div>
+                </li>
+                <li class="lock-item">
+                    <div class="lock-info">
+                        <h3>Back Door</h3>
+                        <p>Status: <span class="lock-status">Unlocked</span></p>
+                        <p>Last update: <span class="lock-update">5 mins ago</span></p>
+                    </div>
+                    <div class="lock-actions">
+                        <button class="lock-toggle">Toggle Lock</button>
+                    </div>
+                </li>
+                <!-- Additional lock items can be added here -->
+            </ul>
+        </section>
+        <section class="add-lock">
+            <h2>Add New Lock</h2>
+            <form class="add-lock-form">
+                <label for="lock-name">Lock Name:</label>
+                <input type="text" id="lock-name" name="lock-name" required>
+                <label for="lock-location">Lock Location:</label>
+                <input type="text" id="lock-location" name="lock-location" required>
+    
+                <button type="submit" class="add-lock-button">Add Lock</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>    
